@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Work+Sans:400,500,600,700&display=swap');
+
+
+
+html{
+  font-size: 100%;
+}
+.form{
+  padding: 20px;
+}
+
+#loginform{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 70%;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  border-color: black;
+  border-style: solid;
+  margin: 0 auto;
+}
+
+
+.row{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  
+}
+
+.row input{
+  width: 80%;
+  box-sizing: border-box;
+	border: none;
+  font-size: 1.5vw;
+  padding: 1.5rem;
+  box-shadow: inset 0px -3px 0px 0px rgba(187,187,187,0.2);
+  transition: box-shadow 0.2s ease-in;
+}
+
+.row input:focus{
+   box-shadow: inset 0px -3px 0px 0px rgba(19, 20, 20, 0.7);
+   outline: none;
+}
+
+.row input::-webkit-input-placeholder{
+  opacity: 1;
+  transition: opacity 0.25s ease-out;
+}
+
+.row input:hover::-webkit-input-placeholder,
+.row input:focus::-webkit-input-placeholder{
+  opacity: 0;
+}
+
+.row label{
+  align-self: start;
+  padding-left: 4.5rem;
+  padding-bottom: 0.5rem;
+  color: rgba(187,187,187,0.9);
+}
+
+.row button{
+  border-radius: 25px;
+  padding: 15px 30px 15px 30px;
+  font-size: 1.3vw;
+  color: white;
+  font-weight: 700;
+  background: black;
+  border: 0px;
+  cursor: pointer;
+  margin-top: 1em;
+  transition: opacity 0.25s ease-out;
+}
+
+.row button:hover{
+  opacity: 0.8;
+}
+
+#button{
+  padding-bottom: 1.5rem;
+}
+
+
+#iconGroup{
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+#iconGroup a{
+  margin: 0 0.6rem;
+}
+
+#alternativeLogin {
+   text-align: center;
+   padding: 1rem;
+   margin: 1rem;
+}
+
+@media screen and (max-width: 850px) {
+  .row input,.row button{
+    font-size: 3vw;
+  }
+}

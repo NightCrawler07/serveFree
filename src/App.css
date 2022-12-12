@@ -1,0 +1,50 @@
+.App{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  height: 100vh;
+  justify-content: space-around;
+ 
+}
+#imglogo{
+  padding: 20px;
+  max-width: 70%;
+}
+.leftlogo{
+  justify-content: center;
+  flex-basis: 60%;
+  display: flex;
+  flex-shrink: 4;
+}
+.rightlogo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 40%;
+}
+.resimg{
+  display: none;
+}
+@media screen and (max-width: 850px) {
+  .App{
+    flex-direction: column !important;
+  }
+
+  .leftlogo{
+    display: none;
+  }
+  .rightlogo{
+    display: flex;
+    flex-basis: 100%;
+    justify-content:safe;
+  }
+  .resimg{
+    display: flex;
+    justify-content: center;
+    flex-basis: 20%;
+  }
+  #imglg{
+    padding: 10px;
+    max-width: 30%;
+  }
+}
